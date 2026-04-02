@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Award, Users, Mic, Target, ChevronRight, Star } from "lucide-react";
 
 export default function Home() {
@@ -55,12 +56,14 @@ export default function Home() {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <div style={{ backgroundColor: "#1e3a5f", border: "3px solid var(--gold)" }} className="w-72 h-72 md:w-96 md:h-96 rounded-full flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div style={{ color: "var(--gold)" }} className="text-6xl font-bold">JSG</div>
-                  <div className="text-gray-400 text-sm mt-2">Photo Coming Soon</div>
-                </div>
-              </div>
+              <Image
+                src="/MLCT web header indigo.jpg"
+                alt="Jason St. Gelais - Maxwell Leadership Certified"
+                width={480}
+                height={300}
+                className="rounded-lg shadow-2xl"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -69,11 +72,12 @@ export default function Home() {
       {/* CREDENTIAL BAR */}
       <section style={{ backgroundColor: "var(--gold)" }} className="py-4 px-6">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-sm font-bold tracking-wider uppercase" style={{ color: "var(--navy)" }}>
-          <span>✦ Maxwell Leadership Certified</span>
+          <Image src="/Certified Trainer.png" alt="Maxwell Leadership Certified Trainer" width={50} height={50} className="object-contain" />
           <span>✦ MBA · MS Leadership</span>
           <span>✦ Agile SAFe 5.0 Practitioner</span>
           <span>✦ McKinsey BPN Accelerator</span>
           <span>✦ 2× FedEx Innovation Finalist</span>
+          <Image src="/ML Certified Team Logo.png" alt="Maxwell Leadership Certified Team" width={110} height={35} className="object-contain" />
         </div>
       </section>
 
