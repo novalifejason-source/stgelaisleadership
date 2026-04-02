@@ -55,13 +55,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex justify-center">
               <Image
-                src="/MLCT web header indigo.jpg"
-                alt="Jason St. Gelais - Maxwell Leadership Certified"
-                width={480}
-                height={300}
-                className="rounded-lg shadow-2xl"
+                src="/jason-headshot.png"
+                alt="Jason St. Gelais - Leadership Coach, Trainer & Speaker"
+                width={320}
+                height={520}
+                className="object-contain drop-shadow-2xl"
                 priority
               />
             </div>
