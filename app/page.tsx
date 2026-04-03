@@ -59,8 +59,8 @@ export default function Home() {
               <Image
                 src="/jason-headshot.png"
                 alt="Jason St. Gelais - Leadership Coach, Trainer & Speaker"
-                width={320}
-                height={520}
+                width={192}
+                height={312}
                 className="object-contain drop-shadow-2xl"
                 priority
               />
