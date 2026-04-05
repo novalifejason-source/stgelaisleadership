@@ -223,14 +223,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA / CONTACT */}
+      {/* BOOKING */}
       <section id="contact" style={{ backgroundColor: "var(--navy)" }} className="py-20 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <div style={{ color: "var(--gold)" }} className="text-sm font-bold tracking-widest uppercase mb-3">Get Started</div>
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Level Up?</h2>
           <p className="text-gray-300 text-lg mb-10">
-            Whether you're looking for a speaker, a trainer for your team, or a coach to help you break through — let's have a conversation.
+            Whether you're looking for a speaker, a trainer for your team, or a coach to help you break through — book a free 30-minute discovery call directly below.
           </p>
+          <div
+            className="calendly-inline-widget rounded-lg overflow-hidden"
+            data-url="https://calendly.com/jasonstgelais?hide_gdpr_banner=1&background_color=0f2444&text_color=ffffff&primary_color=c9a84c"
+            style={{ minWidth: "320px", height: "700px" }}
+          />
+          <p className="text-gray-400 text-sm mt-6">Prefer email? <a href="mailto:jason@stgelaisleadership.com" style={{ color: "var(--gold)" }}>jason@stgelaisleadership.com</a></p>
+        </div>
+      </section>
+
+      {/* HIDDEN FORM SECTION - keeping for future use */}
+      <div style={{ display: "none" }}>
           <div style={{ backgroundColor: "#1e3a5f" }} className="p-8 rounded-lg mb-6">
             <form className="flex flex-col gap-4">
               <div className="flex flex-col md:flex-row gap-4">
@@ -250,9 +261,7 @@ export default function Home() {
               <button type="submit" className="btn-primary w-full text-center">Send Message</button>
             </form>
           </div>
-          <p className="text-gray-400 text-sm">Or email directly: <a href="mailto:jason@stgelaisleadership.com" style={{ color: "var(--gold)" }}>jason@stgelaisleadership.com</a></p>
-        </div>
-      </section>
+      </div>
 
       {/* FOOTER */}
       <footer style={{ backgroundColor: "#0a1a30" }} className="py-8 px-6 text-center text-gray-500 text-sm">
