@@ -70,14 +70,17 @@ export default function Home() {
       </section>
 
       {/* CREDENTIAL BAR */}
-      <section style={{ backgroundColor: "var(--gold)" }} className="py-4 px-6">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-sm font-bold tracking-wider uppercase" style={{ color: "var(--navy)" }}>
-          <Image src="/Certified Trainer.png" alt="Maxwell Leadership Certified Trainer" width={50} height={50} className="object-contain" />
-          <span>✦ MBA · MS Leadership</span>
-          <span>✦ Agile SAFe 5.0 Practitioner</span>
-          <span>✦ McKinsey BPN Accelerator</span>
-          <span>✦ 2× FedEx Innovation Finalist</span>
-          <Image src="/ML Certified Team Logo.png" alt="Maxwell Leadership Certified Team" width={110} height={35} className="object-contain" />
+      <section style={{ backgroundColor: "var(--gold)" }} className="py-2 px-6">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-center items-center gap-5" style={{ color: "var(--navy)" }}>
+          <span className="text-xs font-bold tracking-widest uppercase">MBA · MS Leadership</span>
+          <span className="text-xs font-bold">✦</span>
+          <span className="text-xs font-bold tracking-widest uppercase">Agile SAFe 5.0</span>
+          <span className="text-xs font-bold">✦</span>
+          <span className="text-xs font-bold tracking-widest uppercase">McKinsey BPN Accelerator</span>
+          <span className="text-xs font-bold">✦</span>
+          <span className="text-xs font-bold tracking-widest uppercase">2× FedEx Innovation Finalist</span>
+          <span className="text-xs font-bold">✦</span>
+          <span className="text-xs font-bold tracking-widest uppercase">Maxwell Leadership Certified</span>
         </div>
       </section>
 
@@ -97,7 +100,11 @@ export default function Home() {
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
                 My approach is direct, practical, and results-oriented. No fluff. No filler. Just the work that actually moves the needle.
               </p>
-              <a href="#contact" className="btn-primary">Let's Work Together</a>
+              <div className="flex items-center gap-4 mt-8">
+                <Image src="/Certified Trainer.png" alt="Maxwell Certified Trainer" width={64} height={64} className="object-contain" />
+                <Image src="/ML Certified Team Logo.png" alt="Maxwell Leadership Certified Team" width={140} height={45} className="object-contain" />
+              </div>
+              <a href="#contact" className="btn-primary mt-6 inline-block">Let's Work Together</a>
             </div>
             <div className="flex-1 grid grid-cols-2 gap-4">
               {[
@@ -161,13 +168,14 @@ export default function Home() {
                 tag: "Corporate Training",
                 desc: "Help your leadership team understand how to drive real AI adoption — not just install tools, but create the culture, communication strategy, and change management framework that makes it stick.",
                 cta: "Lead the Change",
+                href: "/services/ai-leadership-adoption",
               },
             ].map((s, i) => (
               <div key={i} style={{ border: "1px solid #e5e7eb", borderTop: "4px solid var(--gold)" }} className="p-8 rounded-lg hover:shadow-lg transition-shadow">
                 <div style={{ color: "var(--gold)" }} className="text-xs font-bold tracking-widest uppercase mb-2">{s.tag}</div>
                 <h3 style={{ color: "var(--navy)" }} className="text-xl font-bold mb-3">{s.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{s.desc}</p>
-                <a href="#contact" className="flex items-center gap-2 font-bold text-sm" style={{ color: "var(--navy)" }}>
+                <a href={"href" in s ? s.href : "#contact"} className="flex items-center gap-2 font-bold text-sm" style={{ color: "var(--navy)" }}>
                   {s.cta} <ChevronRight size={16} />
                 </a>
               </div>
