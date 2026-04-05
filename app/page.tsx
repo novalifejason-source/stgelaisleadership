@@ -138,30 +138,35 @@ export default function Home() {
                 tag: "Workshop · 2-3 Hours",
                 desc: "An immersive team experience that builds connection, surfaces leadership insights, and creates immediate opportunities for growth. The perfect entry point for teams ready to level up.",
                 cta: "Book the Experience",
+                href: "/services/leadership-game",
               },
               {
                 title: "Leadership Training & Workshops",
                 tag: "Half-Day · Full-Day · Multi-Session",
                 desc: "From communication and influence to AI adoption in leadership — customized workshops that equip your team with principles they'll actually use. Based on Maxwell's proven frameworks and real-world application.",
                 cta: "Explore Workshops",
+                href: "/services/workshops",
               },
               {
                 title: "Goal Setting Workshop",
                 tag: "Group · 1:1",
                 desc: "A structured, results-driven workshop that helps individuals get clarity on what they want, why it matters, and how to build the identity to achieve it. The starting point for transformational coaching.",
                 cta: "Get Clarity",
+                href: "/services/goal-setting",
               },
               {
                 title: "1:1 Leadership Coaching",
                 tag: "Ongoing · Package-Based",
                 desc: "Personalized coaching for leaders ready to do the real work. We go beyond surface goals into identity, belief, and the mindset shifts that create lasting change. Application required.",
                 cta: "Apply for Coaching",
+                href: "/services/coaching",
               },
               {
                 title: "Keynote Speaking",
                 tag: "Events · Conferences · Corporate",
                 desc: "Engaging, story-driven keynotes on leadership, communication, connection, growth, and the future of leadership in an AI-driven world. Audiences leave with tools they can use immediately.",
                 cta: "Book Jason to Speak",
+                href: "/services/speaking",
               },
               {
                 title: "AI Leadership Adoption",
@@ -175,7 +180,7 @@ export default function Home() {
                 <div style={{ color: "var(--gold)" }} className="text-xs font-bold tracking-widest uppercase mb-2">{s.tag}</div>
                 <h3 style={{ color: "var(--navy)" }} className="text-xl font-bold mb-3">{s.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{s.desc}</p>
-                <a href={"href" in s ? s.href : "#contact"} className="flex items-center gap-2 font-bold text-sm" style={{ color: "var(--navy)" }}>
+                <a href={s.href} className="flex items-center gap-2 font-bold text-sm" style={{ color: "var(--navy)" }}>
                   {s.cta} <ChevronRight size={16} />
                 </a>
               </div>
