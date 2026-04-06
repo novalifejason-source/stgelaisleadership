@@ -1,25 +1,11 @@
 import Image from "next/image";
 import { Award, Users, Mic, Target, ChevronRight, Star } from "lucide-react";
+import Nav from "./components/Nav";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* NAV */}
-      <nav style={{ backgroundColor: "var(--navy)" }} className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="text-white font-bold text-xl tracking-wide">
-            Jason St. Gelais
-          </div>
-          <div className="hidden md:flex gap-8 text-sm font-semibold tracking-wider text-gray-300 uppercase">
-            <a href="#about" className="hover:text-yellow-400 transition-colors">About</a>
-            <a href="#services" className="hover:text-yellow-400 transition-colors">Services</a>
-            <a href="#speaking" className="hover:text-yellow-400 transition-colors">Speaking</a>
-            <a href="#testimonials" className="hover:text-yellow-400 transition-colors">Testimonials</a>
-            <a href="#contact" className="hover:text-yellow-400 transition-colors">Contact</a>
-          </div>
-          <a href="#contact" className="btn-primary text-sm py-2 px-6">Book a Call</a>
-        </div>
-      </nav>
+      <Nav home={true} />
 
       {/* HERO */}
       <section style={{ backgroundColor: "var(--navy)", paddingTop: "120px", paddingBottom: "100px" }} className="px-6">

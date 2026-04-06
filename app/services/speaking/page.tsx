@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import Nav from "../../components/Nav";
 import { CheckCircle, Mic, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -139,3 +140,4 @@ export default function Speaking() {
     </main>
   );
 }
+

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Nav from "../../components/Nav";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -114,3 +115,4 @@ export default function GoalSetting() {
     </main>
   );
 }
+

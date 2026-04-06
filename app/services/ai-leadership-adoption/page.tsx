@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CheckCircle, ArrowRight, Download, Users, TrendingUp, Shield, Zap, MessageSquare, BarChart } from "lucide-react";
 import type { Metadata } from "next";
+import Nav from "../../components/Nav";
 
 export const metadata: Metadata = {
   title: "AI Leadership Adoption | Jason St. Gelais",
@@ -175,3 +176,4 @@ export default function AILeadershipAdoption() {
     </main>
   );
 }
+

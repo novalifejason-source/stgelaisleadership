@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Nav from "../../components/Nav";
 import { CheckCircle, Clock, Users, Target, ArrowRight, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -138,3 +139,4 @@ export default function LeadershipGame() {
     </main>
   );
 }
+
