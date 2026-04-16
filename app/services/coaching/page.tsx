@@ -50,7 +50,7 @@ export default function Coaching() {
               </div>
             ))}
           </div>
-          <p style={{ color: "var(--navy)" }} className="font-bold text-lg border-l-4 pl-4" style2={{ borderColor: "var(--gold)" }}>
+          <p style={{ color: "var(--navy)" }} className="font-bold text-lg border-l-4 pl-4" >
             This is not a program for people who want to feel good. It's for people who want to get better.
           </p>
         </div>
@@ -106,4 +106,5 @@ export default function Coaching() {
     </main>
   );
 }
+
 
